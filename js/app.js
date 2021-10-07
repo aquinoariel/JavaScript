@@ -122,7 +122,7 @@ while(nombre!="Ariel"){
     nombre = prompt('Ingrese su nombre')
 }*/
 
-let numero1 = Number(prompt('Ingrese valor de producto'));
+/*let numero1 = Number(prompt('Ingrese valor de producto'));
 let numero2 = Number(prompt('Ingrese IVA'))
 
 function valor(valorDeProducto, iva){
@@ -134,5 +134,28 @@ function valor(valorDeProducto, iva){
 }
 
 console.log(valor(numero1, numero2))
-    
+ */   
 
+let pedro = Number(prompt('Cuanta plata tenes Pedro?'))
+let juan = Number(prompt('Cuanta plata tenes Juan?'))
+let luis = Number(prompt('Cuanta plata tenes Luis?'))
+
+function helado(pedro, juan, luis){
+    if(pedro >=20){
+        alert("Te alcanza para 1/4kg Pedro")
+    }else{
+        alert("No llegas flaco, fijate si te gusta un conito")
+    }
+    if(juan >=30){
+        alert("Te alcanza para 1/2kg Juan")
+    }else{
+        alert("Te alcanza para 1/4kg juancito")
+    }
+    if(luis >=40){
+        alert("Te alcanza para 1kg Luis")
+    }else{
+        alert("Te alcanza para 1/2kg Luis")
+    }
+}
+
+helado(pedro, juan, luis)
