@@ -105,7 +105,7 @@ while(i!="ESC"){
     alert(`el usuario ingreso ${nombre}`)
 }while(nombre!= "Ariel")*/
 
-let nombre = prompt('Ingrese su nombre')
+/*let nombre = prompt('Ingrese su nombre')
 
 while(nombre!="Ariel"){
     switch(nombre){
@@ -120,7 +120,19 @@ while(nombre!="Ariel"){
             break        
     }
     nombre = prompt('Ingrese su nombre')
+}*/
+
+let numero1 = Number(prompt('Ingrese valor de producto'));
+let numero2 = Number(prompt('Ingrese IVA'))
+
+function valor(valorDeProducto, iva){
+    let suma = 1 + (iva/100)
+
+    let resultado = valorDeProducto * suma;
+    
+    return resultado;
 }
-  
+
+console.log(valor(numero1, numero2))
     
 
