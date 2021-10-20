@@ -136,7 +136,7 @@ function valor(valorDeProducto, iva){
 console.log(valor(numero1, numero2))
  */   
 
-let pedro = Number(prompt('Cuanta plata tenes Pedro?'))
+/*let pedro = Number(prompt('Cuanta plata tenes Pedro?'))
 let juan = Number(prompt('Cuanta plata tenes Juan?'))
 let luis = Number(prompt('Cuanta plata tenes Luis?'))
 
@@ -158,4 +158,62 @@ function helado(pedro, juan, luis){
     }
 }
 
-helado(pedro, juan, luis)
+helado(pedro, juan, luis)*/
+
+
+/*const persona = {
+    nombre: "Homero",
+    edad: 39,
+    calle: "Av. siempreviva 742 ",
+}
+
+console.log(persona.nombre);
+console.log(persona.edad=22);
+console.log(persona.calle);*/
+
+
+/*function persona (nombre, edad, calle){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.calle = calle;
+    this.hablar = function (){console.log("Hola soy " + this.nombre + ", tengo " + this.edad + " años y vivo en " + this.calle)}
+}
+
+const persona1 = new persona ('Ariel', 24, 'Lanús');
+const persona2 = new persona ('Luis', 33, 'Lomas');
+
+persona1.hablar();
+persona2.hablar();*/
+
+/*const persona1 = {nombre: "Homero", edad: 33, calle: "Av. simepreviva 742"}
+
+console.log("nombre" in persona1);
+console.log("origen" in persona1);
+
+for (const propiedad in persona1){
+    console.log(propiedad[persona1]);
+}*/
+
+class producto{
+    constructor(nombre, precio){
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+    }
+
+    sumaIva(){
+        this.precio = this.precio * 1.21;
+    }
+
+    vender(){
+        this.vendido = true;
+    }
+}
+
+const producto1 = new producto("arroz", "100");
+const producto2 = new producto("fideos", "150");
+
+producto1.sumaIva();
+producto2.sumaIva();
+producto1.vender();
+
